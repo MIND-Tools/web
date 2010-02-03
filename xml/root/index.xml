@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE document SYSTEM '../../common/dtd/ow2.dtd'>
+
+<document>
+  <properties>
+    <author email="mind@ow2.org">MIND team</author>
+    <title>Home Page</title>
+    <filename>index.xml</filename>
+    <pathtoroot>.</pathtoroot>
+  </properties>
+
+  <body>
+    <s1 name="The MIND Project">
+
+      <s2 name="News">
+
+        <p>
+          20/01/10 : The MIND OW2 project is now available !
+        </p>
+
+      </s2>
+
+      <s2 name="Project Description">
+
+        <p>
+          <strong>
+            MIND is an implementation of the
+            <a href="http://fractal.ow2.org">Fractal</a>
+            component model for the development of embedded softwares
+          </strong>
+          It provides an architecture compilation tool-chain, a component
+          library and an integrated development environment based on Eclipse.
+        </p>
+
+      </s2>
+
+      <hr />
+
+    </s1>
+
+  </body>
+</document>

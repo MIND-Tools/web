@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE project SYSTEM '../../common/dtd/project.dtd'>
+
+<project>
+
+  <title>MIND</title>
+
+  <description>MIND is an implementation of the Fractal component model for the
+    development of embedded softwares. It provides an architecture compilation
+    tool-chain, a component library and an integrated development environment
+    based on Eclipse.</description>
+
+  <keywords>MIND,Fractal,component,model,binding,attribute,C,C++,Java,composition,framework,composite,configuration,administration,programming,annotation,architecture,language,lightweight,embedded,ADL,IDL,CPL,open,source,free,software,LGPL</keywords>
+
+  <body>
+    <menu>
+      <legend>Project Links</legend>
+      <menuitem>
+        <connect href="index.xml">Home</connect>
+      </menuitem>
+      <menuitem>
+        <connect href="documentation.xml">Documentation</connect>
+      </menuitem>
+      <menuitem>
+        <connect href="download.xml">Download</connect>
+      </menuitem>
+      <menuitem>
+        <connect href="license.xml">License</connect>
+      </menuitem>
+    </menu>
+
+    <menu>
+      <legend>Developers' Corner</legend>
+      <menuitem>
+        <a href="http://forge.ow2.org/projects/mind/">Forge Site</a>
+      </menuitem>
+      <menuitem>
+        <a href="http://fisheye.ow2.org/browse/MIND">SVN Repository</a>
+      </menuitem>
+      <menuitem>
+        <a href="http://jira.ow2.org/browse/MIND">Issues Tracker</a>
+      </menuitem>
+      <menuitem>
+        <a href="http://bamboo.ow2.org/browse/MIND">Continuous Integration</a>
+      </menuitem>
+    </menu>
+
+    <menu>
+      <legend>About</legend>
+      <menuitem>
+        <connect href="team.xml">Team</connect>
+      </menuitem>
+      <menuitem>
+        <a href="http://mail.ow2.org/wws/info/mind">Mailing List Archive</a>
+      </menuitem>
+    </menu>
+
+  </body>
+</project>

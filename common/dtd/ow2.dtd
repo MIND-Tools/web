@@ -1,0 +1,228 @@
+<!-- ============================================================= -->
+<!--                    ObjectWeb DTD                              -->
+<!-- ============================================================= -->
+
+<!ENTITY % common.markup                                             
+                    "code|u|em|strong|sub|sup|a|connect|anchor|img|br" >
+
+<!ENTITY % lists
+                       "ul|ol"                                       >
+
+<!ENTITY % blocks.markup
+                       "p|copyright|source|%lists;|table|form|script"       >
+
+<!ENTITY % form.markup
+                       "input|textarea|select"                       >
+
+<!-- ============================================================= -->
+<!--                    Document                                   -->
+<!-- ============================================================= -->
+
+<!ELEMENT  document     (properties, body)                           >
+
+<!-- ============================================================= -->
+<!--                    Properties                                 -->
+<!-- ============================================================= -->
+
+<!ELEMENT  properties   (author+, title, filename, pathtoroot)       >
+
+<!--                    Document author                            -->
+<!ELEMENT  author       (#PCDATA)                                    >
+<!ATTLIST  author
+             email      CDATA                              #REQUIRED >
+
+<!--                    Document title                             -->
+<!ELEMENT  title        (#PCDATA)                                    >
+
+<!--                    Filename (used for intern purpose)         -->
+<!ELEMENT  filename     (#PCDATA)                                    >
+
+<!--                    Path to root project (used for intern purpose) -->
+<!ELEMENT  pathtoroot   (#PCDATA)                                    >
+
+<!-- ============================================================= -->
+<!--                    Body                                       -->
+<!-- ============================================================= -->
+
+<!ELEMENT  body         (s1+)                                        >
+
+<!--                    Section                                    -->
+<!ELEMENT  s1           (%blocks.markup;|s2|subtitle|hr)*            >
+<!ATTLIST  s1
+             name       CDATA                              #REQUIRED
+             anchor     CDATA                              #IMPLIED  >
+
+<!--                    Subsection                                 -->
+<!ELEMENT  s2           (%blocks.markup;|subtitle|hr)*               >
+<!ATTLIST  s2
+             name       CDATA                              #REQUIRED
+             anchor     CDATA                              #IMPLIED  >
+
+<!--                    Subtitle                                   -->
+<!ELEMENT  subtitle     (#PCDATA|a|connect)*                         >
+<!ATTLIST  subtitle
+             anchor     CDATA                              #IMPLIED  >
+
+<!-- ============================================================= -->
+<!--                    block markup                               -->
+<!-- ============================================================= -->
+
+<!--                    Text Paragraph                             -->
+<!ELEMENT  p            (#PCDATA | %common.markup;)*                 >
+
+<!--                    Source Paragraph                           -->
+<!ELEMENT  source       (#PCDATA)                                    >
+
+<!--                    Copyright disclaimer                       -->
+<!ELEMENT  copyright    (#PCDATA|br)*                                >
+
+
+<!-- ============================================================= -->
+<!--                    Table                                      -->
+
+<!--                    Attributes that indicate the spanning and
+                        the align of the table cell                -->
+<!ENTITY % cell.span   
+                        'colspan CDATA "1" rowspan CDATA "1"'        >
+<!ENTITY % cell.align  
+ 'align (left|center|right) "left" valign (top|middle|bottom) "top"' >
+
+<!--                    Table element                              -->
+<!ELEMENT  table        (tr+)                                        >
+<!ATTLIST  table
+            border      CDATA                              '1'
+            width       CDATA                              #IMPLIED >
+
+<!--                    Table row header element                   -->
+<!ELEMENT  th           (#PCDATA)                                    >
+<!ATTLIST  th
+            %cell.span;
+            %cell.align;                                             >
+
+<!--                    Table row element                          -->
+<!ELEMENT  tr           (th|td)+                                     >
+
+<!--                    Table row description element              -->
+<!ELEMENT  td           (#PCDATA|%common.markup;|%lists;|%form.markup;|p|hr)* >
+<!ATTLIST  td
+            %cell.span;                                              
+            %cell.align;                                             >
+
+<!-- ============================================================= -->
+<!--                    Lists                                      -->
+
+<!--                    Unordered list (typically bulleted)        -->
+<!ELEMENT ul            (li, (li | %lists;)*)                        >
+
+<!--                    Ordered list (typically numbered)          -->
+<!ELEMENT ol            (li, (li | %lists;)*)                        >
+
+<!--                    List item                                  -->
+<!ELEMENT li            (#PCDATA|%common.markup;|%blocks.markup;)*    >
+
+<!-- ============================================================= -->
+<!--                    Common markup                              -->
+<!-- ============================================================= -->
+
+<!--                    Code (typically monospaced)                -->
+<!ELEMENT  code         (#PCDATA)                                    >
+
+<!ELEMENT  u            (#PCDATA)                                    >
+
+<!--                    Emphasis (typically italic)                -->
+<!ELEMENT  em           (#PCDATA|code|sup|sub|a|connect)*            >
+
+<!--                    Strong (typically bold)                    -->
+<!ELEMENT  strong       (#PCDATA|code|sup|sub|a|connect|br)*         >
+
+<!--                    Superscript (typically smaller and higher) -->
+<!ELEMENT  sup          (#PCDATA)                                    >
+
+<!--                    Subscript (typically smaller and lower)    -->
+<!ELEMENT  sub          (#PCDATA)                                    >
+
+<!--                    Image                                      -->
+<!ELEMENT  img          EMPTY                                        >
+<!ATTLIST  img
+             src        CDATA                              #REQUIRED
+             alt        CDATA                              #REQUIRED
+             border     CDATA                              #REQUIRED
+             height     CDATA                              #REQUIRED
+             width      CDATA                              #REQUIRED
+             hspace     CDATA                              #IMPLIED 
+             vspace     CDATA                              #IMPLIED 
+             align      (top|middle|bottom)                "middle"  >
+
+<!--                    horizontal rule                            -->
+<!ELEMENT  hr           EMPTY                                        >
+
+<!--                    forced line break                          -->
+<!ELEMENT  br           EMPTY                                        >
+
+<!-- ============================================================= -->
+<!--                    Links                                      -->
+
+<!--                    Hard replacing link (equivalent of <a
+                        name="">                                   -->
+<!ELEMENT  anchor       EMPTY                                        >
+<!ATTLIST  anchor
+             name       CDATA                              #REQUIRED >
+
+<!--                    Hard replacing link (equivalent of <a ...> -->
+<!ELEMENT  a            (#PCDATA|code|sub|sup|img|br)*               >
+<!ATTLIST  a
+             href       CDATA                              #REQUIRED
+             fork       (false|true)                       "false"   >
+
+<!--                    Soft link between processed pages (no
+                        equivalent in HTML)                        -->
+<!ELEMENT  connect      (#PCDATA|code|sub|sup|img)*                  >
+<!ATTLIST  connect
+             href       CDATA                              #REQUIRED >
+
+<!-- ============================================================= -->
+<!--                    form                                       -->
+<!-- ============================================================= -->
+
+<!ELEMENT  form        (table|%form.markup;|subtitle|p|hr)+          >
+<!ATTLIST  form
+             method     (get|post)                         "post"      
+             action     CDATA                              #REQUIRED >
+
+
+<!ELEMENT  input        EMPTY                                        >
+<!ATTLIST  input
+             type   (text|hidden|checkbox|radio|submit|reset)  #REQUIRED
+             name       CDATA                              #REQUIRED  
+             value      CDATA                              #REQUIRED  
+             size       CDATA                              #IMPLIED  
+             checked    (checked)                          #IMPLIED  >
+
+<!ELEMENT  textarea     (#PCDATA)                                    >
+<!ATTLIST  textarea
+             name       CDATA                              #REQUIRED
+             rows       CDATA                              #IMPLIED   
+             cols       CDATA                              #IMPLIED  >
+
+<!ELEMENT  select       (option+)                                    >
+<!ATTLIST  select
+             name       CDATA                              #REQUIRED      
+             size       CDATA                              #REQUIRED >
+
+<!ELEMENT  option       (#PCDATA)                                    >
+<!ATTLIST  option
+             value      CDATA                              #IMPLIED  
+          selected      (selected)                         #IMPLIED  >
+
+<!-- ============================================================= -->
+<!--                    script                                     -->
+<!-- ============================================================= -->
+
+<!--                    Script                                     -->
+<!ELEMENT  script       EMPTY                                        >
+<!ATTLIST  script
+             type       CDATA                              #REQUIRED
+             src        CDATA                              #REQUIRED >
+<!-- ============================================================= -->
+<!--                    end of DTD                                 -->
+<!-- ============================================================= -->

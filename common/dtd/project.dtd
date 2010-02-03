@@ -1,0 +1,36 @@
+<!-- ============================================================= -->
+<!--                    ObjectWeb project DTD                      -->
+<!-- ============================================================= -->
+
+<!ELEMENT  project      (title, description, keywords, body) >
+
+<!-- The recommended maximum number of characters for this tag is 60. -->
+<!ELEMENT  title        (#PCDATA)                                    >
+
+<!-- The recommended maximum number of characters for this tag is 150. -->
+<!ELEMENT  description  (#PCDATA)                                    >
+
+<!-- The recommended maximum number of characters for this tag is -->
+<!-- 874. Do not repeat a word more than 3 times -->
+<!ELEMENT  keywords     (#PCDATA)                                    >
+
+<!ELEMENT  body         (menu+)                                      >
+
+<!ELEMENT  menu         ((legend|connect|a), menuitem*)              >
+
+<!ELEMENT  menuitem     (connect|a)                                  >
+
+<!ELEMENT  legend       (#PCDATA)                                    >
+
+<!ELEMENT  connect      (#PCDATA)                                    >
+<!ATTLIST  connect
+             href       CDATA                              #REQUIRED >
+
+<!ELEMENT  a           (#PCDATA)                                     >
+<!ATTLIST  a
+             href       CDATA                              #REQUIRED 
+             fork       (false|true)                       "false"   >
+
+<!-- ============================================================= -->
+<!--                    end of DTD                                 -->
+<!-- ============================================================= -->

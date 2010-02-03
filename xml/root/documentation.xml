@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE document SYSTEM '../../common/dtd/ow2.dtd'>
+
+<document>
+  <properties>
+    <author email="mind@ow2.org">MIND team</author>
+    <title>Documentation</title>
+    <filename>documentation.xml</filename>
+    <pathtoroot>.</pathtoroot>
+  </properties>
+
+  <body>
+    <s1 name="mindc documentation">
+      <p><strong>mindc</strong> is a modular and extensible architecture 
+        compilation tool-chain that can be used to compile component-based 
+        applications from their architectural descriptions (ADL files).
+      </p>
+      <s2 name="User Guide">
+        <p>The <em>mindc User Guide</em> gives a description of:</p>
+        <ul>
+          <li>the ADL and IDL languages used to describe the architecture of
+            an application;</li>
+          <li>the coding conventions that must be followed in the C code,</li>
+          <li>the use of the mindc tool-chain.</li>
+        </ul>
+        <p>This document is available in multiple versions:</p>
+        <ul>
+          <li><a href="mindc/mindc-user-guide.pdf">PDF</a></li>
+          <li><a href="mindc/userGuide/mindc-user-guide.html">Multiple HTML pages</a></li>
+          <li><a href="mindc/mindc-user-guide.html">Single HTML page</a></li>
+          <li><a href="mindc/printable/mindc-user-guide.html">Printable HTML page</a></li>
+        </ul>
+      </s2>
+      
+      <s2 name="Technical documentation">
+        <p>The <a href="mindc/index.html">mindc Technical documentation</a>
+          contains various generated reports based on the mindc source code. It
+          includes javadoc, highlighted source-code, test-coverage and various
+          maven reports</p>
+      </s2>
+    </s1>
+
+    <s1 name="Reference Documentation">
+      <p>The specification of the Fractal component model is presented in the
+        <a href="http://fractal.ow2.org/specification/index.html"> The Fractal
+        Component Model</a> document.</p>
+    </s1>
+
+    <s1 anchor="list" name="Mailing List">
+      <p>Questions, comments, ideas, etc. related to MIND can be posted on the
+        <a href="mailto:mind@objectweb.org">MIND mailing list</a>.</p>
+    </s1>
+  </body>
+</document>

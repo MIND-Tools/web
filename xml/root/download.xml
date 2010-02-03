@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE document SYSTEM '../../common/dtd/ow2.dtd'>
+
+<document>
+
+  <properties>
+    <author email="mind@ow2.org">MIND team</author>
+    <title>Download</title>
+    <filename>download.xml</filename>
+    <pathtoroot>.</pathtoroot>
+  </properties>
+
+  <body>
+    <s1 name="Getting the tool-chain">
+      <p>The mindc tool-chain is available on the 
+        <a href="http://forge.ow2.org/project/showfiles.php?group_id=375">MIND Forge</a>
+        The tool-chain requires a Java virtual machine and use GCC by default to
+        compile C files.</p>
+    </s1>
+
+    <s1 name="Getting the sources">
+      <p>You can visit the
+        <a href="http://forge.ow2.org/plugins/scmsvn/index.php?group_id=375">MIND SVN page</a>
+        for instructions on how to perform a checkout of the sources.</p>
+
+      <p>The mindc tool-chain (in <code>trunk/mind-compiler</code>)is built with
+        <a href="http://maven.apache.org/">Maven</a> and is self-contained, 
+        which means that you can check it out and build it. See the
+         <code>README.txt</code> file for build instructions.</p>
+    </s1>
+  </body>
+</document>
+

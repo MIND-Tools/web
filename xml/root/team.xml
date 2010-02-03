@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE document SYSTEM '../../common/dtd/ow2.dtd'>
+
+<document>
+  <properties>
+    <author email="mind@ow2.org">MIND team</author>
+    <title>Team</title>
+    <filename>team.xml</filename>
+    <pathtoroot>.</pathtoroot>
+  </properties>
+
+  <body>
+    <s1 name="MIND Team">
+      <p>The MIND project has been originally developed in the context of the 
+        MIND funded project of the French <a href="http://minalogic.org/">Minalogic</a>
+        "pole de competitivite". Partners of this funded project are :</p>
+      
+      <ul>
+        <li><a href="http://www.st.com">STMicroelectronics</a></li>
+        <li><a href="http://www.stericsson.com">STErcisson</a></li>
+        <li><a href="http://www.rd.francetelecom.com">France Telecom R&amp;D</a></li>
+        <li><a href="http://www.schneider-electric.fr">Schneider Electric</a></li>
+        <li><a href="http://www.logica.fr">Logica</a></li>
+        <li><a href="http://www.fr.sogeti.com">Sogeti</a></li>
+        <li><a href="http://www.groupe-open.com/">Groupe OPEN</a></li>
+        <li><a href="http://www.itlabs.fr.orange-business.com/">IT&amp;Labs</a></li>
+        <li><a href="http://www.itris.fr/">Itris Automation Square</a></li>
+        <li><a href="http://www.is2t.com/">IS2T</a></li>
+        <li><a href="http://www.inria.fr">INRIA</a> (<a href="http://sardes.inrialpes.fr">Sardes</a>
+           and <a href="http://adam.lille.inria.fr">ADAM</a> teams)</li>
+        <li><a href="http://www-list.cea.fr/">CEA LIST</a></li>
+        <li><a href="http://www.liglab.fr/">LIG</a> (<a href="http://www-adele.imag.fr/">ADELE team</a>)</li>
+        <li><a href="http://www.ineris.fr/">INERIS</a></li>
+        <li><a href="http://www.istia.univ-angers.fr/">ISTIA</a></li>
+      </ul>
+        
+    </s1>
+
+  </body>
+</document>
