@@ -24,7 +24,7 @@
         <a href="http://forge.ow2.org/plugins/scmsvn/index.php?group_id=375">MIND SVN page</a>
         for instructions on how to perform a checkout of the sources.</p>
 
-      <p>The mindc tool-chain (in <code>trunk/mind-compiler</code>)is built with
+      <p>The mindc tool-chain (in <code>mindc/trunk</code>)is built with
         <a href="http://maven.apache.org/">Maven</a> and is self-contained, 
         which means that you can check it out and build it. See the
          <code>README.txt</code> file for build instructions.</p>
