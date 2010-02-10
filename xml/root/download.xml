@@ -12,22 +12,40 @@
   </properties>
 
   <body>
-    <s1 name="Getting the tool-chain">
-      <p>The mindc tool-chain is available on the 
-        <a href="http://forge.ow2.org/project/showfiles.php?group_id=375">MIND Forge</a>
-        The tool-chain requires a Java virtual machine and use GCC by default to
-        compile C files.</p>
-    </s1>
+    <s1 name="Getting the mindc tool-chain">
+    
+      <s2 name="Stable releases">
+        <p>Stable releases of the mindc tool-chain are available on the 
+          <a href="http://forge.ow2.org/project/showfiles.php?group_id=375">File
+          section of the MIND Forge</a>.</p>
+        <p>The tool-chain requires a Java virtual machine (version 1.5 or above)
+          and uses GCC by default to compile C files.</p>
+      </s2>
 
-    <s1 name="Getting the sources">
-      <p>You can visit the
-        <a href="http://forge.ow2.org/plugins/scmsvn/index.php?group_id=375">MIND SVN page</a>
-        for instructions on how to perform a checkout of the sources.</p>
+      <s2 name="Development builds">
+        <p>The latest build packages of the mindc tool-chain are available on the 
+          <a href="http://bamboo.ow2.org/browse/MIND-MINDC">continuous-integration server</a>.
+          Binary and source packages are available in the <em>Artifacts</em>
+          section of each build.</p>
+          
+        <p>Link to latest build artifacts :</p>
+        <ul>
+          <li><a href="http://bamboo.ow2.org/browse/MIND-MINDC/latest/artifact/Binary-assemblies">Binary packages</a></li>
+          <li><a href="http://bamboo.ow2.org/browse/MIND-MINDC/latest/artifact/Source-assemblies">Source packages</a></li>
+        </ul>
+      </s2>
+      
+      <s2 name="Getting the sources">
+        <p>You can visit the
+          <a href="http://forge.ow2.org/plugins/scmsvn/index.php?group_id=375">MIND SVN page</a>
+          for instructions on how to perform a checkout of the sources.</p>
 
-      <p>The mindc tool-chain (in <code>mindc/trunk</code>)is built with
-        <a href="http://maven.apache.org/">Maven</a> and is self-contained, 
-        which means that you can check it out and build it. See the
-         <code>README.txt</code> file for build instructions.</p>
+        <p>The mindc tool-chain (in <code>mindc/trunk</code> in the SVN 
+          repository) is built with <a href="http://maven.apache.org/">Maven</a>.
+          It is self-contained, which means that you can check it out and build
+          it directly. See the <code>README.txt</code> file in the sources for
+          build instructions.</p>
+      </s2>
     </s1>
   </body>
 </document>
