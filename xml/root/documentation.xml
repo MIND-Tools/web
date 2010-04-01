@@ -33,7 +33,32 @@
         </ul>
       </s2>
       
-      <s2 name="Technical documentation">
+      <s1 name="MindEd documentation">
+		<p><strong>MindEd</strong> is an Eclipse-based IDE (Integrated Development Environment)
+		for fractal MIND applications.<br/>
+		MindEd provides :</p>
+		<ul>
+			<li>a textual editor with auto-completion, syntaxic and semantic coloring, Eclipse's quick-fix system among other features.</li>
+			<li>a specialised navigator to handle project exploration, which automatically manages paths and makefile.</li>
+			<li>a graphical editor for a visual representation or edition of mind's components.</li>
+		</ul>
+		
+		<!-- Not done yet
+		<s2 name="User Guide">
+		</s2>
+		-->
+		<s2 name="Technical documentation">
+			<p>MindEd is an Eclipse plug-in created with three modeling frameworks (code generation facilities) developped by the Eclipse Project :</p>
+			<ul>
+			<li>Eclipse Modeling Framework (EMF) generates a structured data model (more <a href="http://www.eclipse.org/modeling/emf/">here</a>)</li>
+			<li>Textual Modeling Framework (TMF Xtext) generates a text editor based on a given grammar (more <a href="http://www.eclipse.org/modeling/tmf/?project=xtext">here</a>)</li>
+			<li>Graphical Modeling Framework (GMF) generates a graphical editor based on and EMF metamodel, both for edition and visualisation (more <a href="http://www.eclipse.org/modeling/gmf/">here</a>)</li>
+			</ul>
+		</s2>
+		
+	</s1>
+
+    <s2 name="Technical documentation">
         <p>The <a href="mindc/index.html">mindc Technical documentation</a>
           contains various generated reports based on the mindc source code. It
           includes javadoc, highlighted source-code, test-coverage and various
@@ -46,10 +71,13 @@
         <a href="http://fractal.ow2.org/specification/index.html"> The Fractal
         Component Model</a> document.</p>
     </s1>
-
-    <s1 anchor="list" name="Mailing List">
+	
+	<s1 anchor="list" name="Mailing List">
       <p>Questions, comments, ideas, etc. related to MIND can be posted on the
         <a href="mailto:mind@objectweb.org">MIND mailing list</a>.</p>
     </s1>
+	
+	
+	
   </body>
 </document>
