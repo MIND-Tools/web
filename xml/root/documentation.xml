@@ -32,8 +32,17 @@
           <li><a href="mindc/printable/mindc-user-guide.html">Printable HTML page</a></li>
         </ul>
       </s2>
+
+ 	  <s2 name="Technical documentation">
+        <p>The <a href="mindc/index.html">mindc Technical documentation</a>
+          contains various generated reports based on the mindc source code. It
+          includes javadoc, highlighted source-code, test-coverage and various
+          maven reports</p>
+      </s2>
       
-      <s1 name="MindEd documentation">
+    </s1>
+      
+    <s1 name="MindEd documentation">
 		<p><strong>MindEd</strong> is an Eclipse-based IDE (Integrated Development Environment)
 		for fractal MIND applications.<br/>
 		MindEd provides :</p>
@@ -55,16 +64,7 @@
 			<li>Graphical Modeling Framework (GMF) generates a graphical editor based on and EMF metamodel, both for edition and visualisation (more <a href="http://www.eclipse.org/modeling/gmf/">here</a>)</li>
 			</ul>
 		</s2>
-		
 	</s1>
-
-    <s2 name="Technical documentation">
-        <p>The <a href="mindc/index.html">mindc Technical documentation</a>
-          contains various generated reports based on the mindc source code. It
-          includes javadoc, highlighted source-code, test-coverage and various
-          maven reports</p>
-      </s2>
-    </s1>
 
     <s1 name="Reference Documentation">
       <p>The specification of the Fractal component model is presented in the
