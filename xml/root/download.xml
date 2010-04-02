@@ -66,8 +66,12 @@
 			<li><strong>EMF 2.5 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
 			<li><strong>TMF xText 0.7.2 :</strong> http://download.eclipse.org/modeling/tmf/updates/</li>
 			<li><strong>Xtext Antlr 0.7.2</strong> http://download.itemis.com/updates/milestones</li>
-			<li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede</li>
-			<li><strong>CDT Utilities 5.0.0</strong></li>
+			<li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede
+			<ul>
+				<li><strong>Eclipse C/C++ Development Tools 5.0.1</strong></li>
+				<li><strong>CDT Utilities 5.0.0</strong></li>
+			</ul>
+			</li>
 			<li><strong>EMF Model query OCL 1.2 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
 			</ul>
     	</s2>
@@ -92,8 +96,12 @@
 			<li><strong>EMF 2.6.0M5 :</strong> http://download.eclipse.org/modeling/emf/updates/milestones/</li>
 			<li><strong>TMF xText 1.0.0M6 :</strong> http://download.eclipse.org/modeling/tmf/updates/milestones</li>
 			<li><strong>Xtext Antlr 1.0.0M6 :</strong> http://download.itemis.com/updates/milestones</li>
-			<li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede</li>
-			<li><strong>CDT Utilities 5.0.0</strong></li>
+			<li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede
+			<ul>
+				<li><strong>Eclipse C/C++ Development Tools 5.0.1</strong></li>
+				<li><strong>CDT Utilities 5.0.0</strong></li>
+			</ul>
+			</li>
 			<li><strong>EMF Model query OCL 1.2 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
 			</ul>
       	</s2>
