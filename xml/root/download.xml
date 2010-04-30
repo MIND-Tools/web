@@ -15,20 +15,45 @@
     <s1 name="Getting the mindc tool-chain">
     
       <s2 name="Stable releases">
-        <p>Stable releases of the mindc tool-chain are available on the 
+	  
+	    <p>The current stable release of the mindc tool-chain is 0.2 :</p>
+        <ul>
+          <li>Binary packages :
+            <ul>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-bin.tar.bz2">mindc-0.2-bin.tar.bz2</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-bin.tar.gz">mindc-0.2-bin.tar.gz</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-bin.zip">mindc-0.2-bin.zip</a></li>
+            </ul>
+          </li>
+          <li>Source packages :
+            <ul>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-src.tar.bz2">mindc-0.2-src.tar.bz2</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-src.tar.gz">mindc-0.2-src.tar.gz</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-src.zip">mindc-0.2-src.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <p>Previous stable releases of the mindc tool-chain are available on the 
           <a href="http://forge.ow2.org/project/showfiles.php?group_id=375">File
           section of the MIND Forge</a>.</p>
         <p>The tool-chain requires a Java virtual machine (version 1.5 or above)
           and uses GCC by default to compile C files.</p>
       </s2>
 
-      <s2 name="Development builds">
+      <s2 name="Unstable releases (alpha or beta releases)">
+        <p>Alpha or beta releases of the mindc tool-chain are available on the 
+          <a href="http://forge.ow2.org/project/showfiles.php?group_id=375">File
+          section of the MIND Forge</a>.</p>
+      </s2>
+      
+      <s2 name="Development builds (SNAPSHOT builds)">
         <p>The latest build packages of the mindc tool-chain are available on the 
           <a href="http://bamboo.ow2.org/browse/MIND-MINDC">continuous-integration server</a>.
           Binary and source packages are available in the <em>Artifacts</em>
           section of each build.</p>
           
-        <p>Link to latest build artifacts :</p>
+        <p>Link to latest development build artifacts :</p>
         <ul>
           <li><a href="http://bamboo.ow2.org/browse/MIND-MINDC/latest/artifact/Binary-assemblies">Binary packages</a></li>
           <li><a href="http://bamboo.ow2.org/browse/MIND-MINDC/latest/artifact/Source-assemblies">Source packages</a></li>
@@ -50,61 +75,61 @@
     
     
     <s1 name="Getting Eclipse and MindEd">
-    	<s2 name="Installation guide">
-    		<p><a href="http://download.forge.objectweb.org/mind/MindEd_Installation_Guide.pdf">PDF version</a></p>
-    	</s2>
+        <s2 name="Installation guide">
+            <p><a href="http://download.forge.objectweb.org/mind/MindEd_Installation_Guide.pdf">PDF version</a></p>
+        </s2>
     
-    	<s2 name="MindEd plugins releases">
-	    	<p>Releases of MindEd plug-ins are available on the 
-	        <a href="http://forge.ow2.org/project/showfiles.php?group_id=375">File
-	        section of the MIND Forge</a> or can be installed via the Mind Eclipse Update Site : 
-	        <code>http://minalogic.net/svnroot/MIND/SP3/tags/v0.1_20012010/org.ow2.fractal.mind.site</code></p>	
-	        <p><strong>Eclipse Gallileo for MindEd 0.1</strong></p>
-	   		<ul>
-	   		<li><a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/SR2/eclipse-java-galileo-SR2-win32.zip">Eclipse SDK Galileo 3.5.1</a></li>
-			<li><strong>GMF 2.2.2 :</strong> http://download.eclipse.org/modeling/gmf/updates/releases/site.xml</li>
-			<li><strong>EMF 2.5 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
-			<li><strong>TMF xText 0.7.2 :</strong> http://download.eclipse.org/modeling/tmf/updates/</li>
-			<li><strong>Xtext Antlr 0.7.2</strong> http://download.itemis.com/updates/milestones</li>
-			<li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede
-			<ul>
-				<li><strong>Eclipse C/C++ Development Tools 5.0.1</strong></li>
-				<li><strong>CDT Utilities 5.0.0</strong></li>
-			</ul>
-			</li>
-			<li><strong>EMF Model query OCL 1.2 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
-			</ul>
-    	</s2>
-    	
-    	<s2 name="Full package">
-    		<p>Available soon</p>
-    	</s2>
-    	
-    	<s2 name="Getting the sources">
-	        <p>You can visit the
-	          <a href="http://forge.ow2.org/plugins/scmsvn/index.php?group_id=375">MIND SVN page</a>
-	          for instructions on how to perform a checkout of the sources.</p>
-	
-	        <p>The MindEd plug-ins projects can be found in <code>IDE/trunk</code> in the SVN 
-	          repository.
-	          The projects in the repository do not include the sources : these are generated by EMF, GMF and TMF.
-	          You will need Eclipse with these plug-ins to generate the code.</p>
-	        <p><strong>Eclipse Helios for MindEd 0.2</strong></p>
-			<ul>
-    		<li><a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Helios 3.6M6</a></li>
-			<li><strong>GMF 2.3.0M6 :</strong> http://download.eclipse.org/modeling/gmf/updates/milestones/site.xml</li>
-			<li><strong>EMF 2.6.0M5 :</strong> http://download.eclipse.org/modeling/emf/updates/milestones/</li>
-			<li><strong>TMF xText 1.0.0M6 :</strong> http://download.eclipse.org/modeling/tmf/updates/milestones</li>
-			<li><strong>Xtext Antlr 1.0.0M6 :</strong> http://download.itemis.com/updates/milestones</li>
-			<li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede
-			<ul>
-				<li><strong>Eclipse C/C++ Development Tools 5.0.1</strong></li>
-				<li><strong>CDT Utilities 5.0.0</strong></li>
-			</ul>
-			</li>
-			<li><strong>EMF Model query OCL 1.2 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
-			</ul>
-      	</s2>
+        <s2 name="MindEd plugins releases">
+            <p>Releases of MindEd plug-ins are available on the 
+            <a href="http://forge.ow2.org/project/showfiles.php?group_id=375">File
+            section of the MIND Forge</a> or can be installed via the Mind Eclipse Update Site : 
+            <code>http://minalogic.net/svnroot/MIND/SP3/tags/v0.1_20012010/org.ow2.fractal.mind.site</code></p>    
+            <p><strong>Eclipse Gallileo for MindEd 0.1</strong></p>
+            <ul>
+            <li><a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/SR2/eclipse-java-galileo-SR2-win32.zip">Eclipse SDK Galileo 3.5.1</a></li>
+            <li><strong>GMF 2.2.2 :</strong> http://download.eclipse.org/modeling/gmf/updates/releases/site.xml</li>
+            <li><strong>EMF 2.5 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
+            <li><strong>TMF xText 0.7.2 :</strong> http://download.eclipse.org/modeling/tmf/updates/</li>
+            <li><strong>Xtext Antlr 0.7.2</strong> http://download.itemis.com/updates/milestones</li>
+            <li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede
+            <ul>
+                <li><strong>Eclipse C/C++ Development Tools 5.0.1</strong></li>
+                <li><strong>CDT Utilities 5.0.0</strong></li>
+            </ul>
+            </li>
+            <li><strong>EMF Model query OCL 1.2 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
+            </ul>
+        </s2>
+        
+        <s2 name="Full package">
+            <p>Available soon</p>
+        </s2>
+        
+        <s2 name="Getting the sources">
+            <p>You can visit the
+              <a href="http://forge.ow2.org/plugins/scmsvn/index.php?group_id=375">MIND SVN page</a>
+              for instructions on how to perform a checkout of the sources.</p>
+    
+            <p>The MindEd plug-ins projects can be found in <code>IDE/trunk</code> in the SVN 
+              repository.
+              The projects in the repository do not include the sources : these are generated by EMF, GMF and TMF.
+              You will need Eclipse with these plug-ins to generate the code.</p>
+            <p><strong>Eclipse Helios for MindEd 0.2</strong></p>
+            <ul>
+            <li><a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Helios 3.6M6</a></li>
+            <li><strong>GMF 2.3.0M6 :</strong> http://download.eclipse.org/modeling/gmf/updates/milestones/site.xml</li>
+            <li><strong>EMF 2.6.0M5 :</strong> http://download.eclipse.org/modeling/emf/updates/milestones/</li>
+            <li><strong>TMF xText 1.0.0M6 :</strong> http://download.eclipse.org/modeling/tmf/updates/milestones</li>
+            <li><strong>Xtext Antlr 1.0.0M6 :</strong> http://download.itemis.com/updates/milestones</li>
+            <li><strong>CDT 5.0.1 :</strong> http://download.eclipse.org/tools/cdt/releases/ganymede
+            <ul>
+                <li><strong>Eclipse C/C++ Development Tools 5.0.1</strong></li>
+                <li><strong>CDT Utilities 5.0.0</strong></li>
+            </ul>
+            </li>
+            <li><strong>EMF Model query OCL 1.2 :</strong> http://download.eclipse.org/modeling/emf/updates/releases/</li>
+            </ul>
+          </s2>
     </s1>
   </body>
 </document>
