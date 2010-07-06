@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 
-<!DOCTYPE document SYSTEM '../../common/dtd/ow2.dtd'>
+<!DOCTYPE document SYSTEM '../../common/dtd/ow2.dtd' [
+<!ENTITY mindcVersion "0.2.1" >
+]>
 
 <document>
 
@@ -16,20 +18,20 @@
     
       <s2 name="Stable releases">
 	  
-	    <p>The current stable release of the mindc tool-chain is 0.2 :</p>
+	    <p>The latest stable release of the mindc tool-chain is &mindcVersion; :</p>
         <ul>
           <li>Binary packages :
             <ul>
-              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-bin.tar.bz2">mindc-0.2-bin.tar.bz2</a></li>
-              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-bin.tar.gz">mindc-0.2-bin.tar.gz</a></li>
-              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-bin.zip">mindc-0.2-bin.zip</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-&mindcVersion;-bin.tar.bz2">mindc-&mindcVersion;-bin.tar.bz2</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-&mindcVersion;-bin.tar.gz">mindc-&mindcVersion;-bin.tar.gz</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-&mindcVersion;-bin.zip">mindc-&mindcVersion;-bin.zip</a></li>
             </ul>
           </li>
           <li>Source packages :
             <ul>
-              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-src.tar.bz2">mindc-0.2-src.tar.bz2</a></li>
-              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-src.tar.gz">mindc-0.2-src.tar.gz</a></li>
-              <li><a href="http://download.forge.objectweb.org/mind/mindc-0.2-src.zip">mindc-0.2-src.zip</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-&mindcVersion;-src.tar.bz2">mindc-&mindcVersion;-src.tar.bz2</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-&mindcVersion;-src.tar.gz">mindc-&mindcVersion;-src.tar.gz</a></li>
+              <li><a href="http://download.forge.objectweb.org/mind/mindc-&mindcVersion;-src.zip">mindc-&mindcVersion;-src.zip</a></li>
             </ul>
           </li>
         </ul>
