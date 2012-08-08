@@ -11,6 +11,14 @@
   </properties>
 
   <body>
+    <s1 name="Contributors' documentation">
+      <p><strong>MIND sources</strong> are hosted on <a href="https://github.com/MIND-Tools">GitHub MIND-Tools organization</a>.
+To contribute to MIND technology and core tools, follow the <a href="http://forge.ow2.org/docman/view.php/375/258/MIND_development_process.pdf">MIND development process document</a>. 
+      </p>
+    </s1>
+      
+      
+      
     <s1 name="mindc documentation">
       <p><strong>mindc</strong> is a modular and extensible architecture 
         compilation tool-chain that can be used to compile component-based 
